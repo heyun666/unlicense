@@ -3,7 +3,7 @@ name: PyInstaller Check
 on: [push]
 
 jobs:
-  check:
+  workflow_dispatch:
     name: Check PyInstaller for Python ${{ matrix.python_version }} (${{ matrix.architecture }})
     strategy:
       fail-fast: false
